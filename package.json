@@ -1,0 +1,30 @@
+{
+  "name": "china-geo",
+  "version": "1.0.0",
+  "description": "china-geo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack && ./node_modules/lite-server/bin/lite-server",
+    "lint": "eslint --ext .js,.jsx src"
+  },
+  "author": "Pegasusknight",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^4.2.7",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "less": "^2.3.1",
+    "less-loader": "^2.2.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.9.4",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
