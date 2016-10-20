@@ -21,6 +21,11 @@ var config = {
         test: /\.ts$/,
         loader: 'ts-loader'
       }, {
+        extensions: ['js'],
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {compact: false}
+      }, {
         extensions: ['json'],
         test: /\.(json)(\?.*)?$/,
         loader: 'json-loader'
@@ -77,7 +82,7 @@ var config = {
       }]
   },
   resolve: {
-    // extensions: ['', '.ts', '.js'],
+    extensions: ['', '.ts', '.js'],
     modulesDirectories: ['node_modules']
   },
   plugins: [

@@ -3,15 +3,14 @@
     "module": "commonjs",
     "removeComments": true,
     "sourceMap": true,
-    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
     "newLine": "LF",
     "listEmittedFiles": true,
-    "target": "es5",
     "lib": [
       "es2015.promise",
       "es2015.core",
@@ -23,6 +22,10 @@
   },
   "include": [
     "src/**/*"
+  ],
+  "files": [
+    "src/index.ts",
+    "typings/index.d.ts"
   ],
   "exclude": [
     "node_modules"

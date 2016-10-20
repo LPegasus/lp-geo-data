@@ -5,19 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack && ./node_modules/lite-server/bin/lite-server",
-    "lint": "eslint --ext .js,.jsx src"
+    "start": "webpack-dev-server --hot --color",
+    "svr": "./node_modules/lite-server/bin/lite-server",
+    "lint": "eslint --ext .js,.jsx src",
+    "cpl": "tsc"
   },
   "author": "Pegasusknight",
   "license": "MIT",
   "dependencies": {
     "d3": "^4.2.7",
+    "immutable": "^3.8.1",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3",
     "webpack": "^1.13.2"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "less": "^2.3.1",
